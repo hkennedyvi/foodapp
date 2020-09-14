@@ -4,8 +4,10 @@ function NavBar() {
    
 
     return (
-        <div>
+        <div className="scss-test-class">
+            <h1>
             NAVBAR TEST
+            </h1>
         </div>
     );
 }
