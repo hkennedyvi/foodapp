@@ -1,0 +1,11 @@
+$textPrimary: #7bdbdb;
+$textSecondary: #ececec;
+$bgPrimary: #23232e;
+$bgSecondary: #141418;
+
+.about-header {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color: $textPrimary;
+}
