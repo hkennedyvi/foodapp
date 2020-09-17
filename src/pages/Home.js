@@ -1,18 +1,17 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import MainContent from '../components/MainContent';
 
 function  Home () {
 
     return (
-        <div>
+        <div className="page-container">
+            <div className="content-wrap">
             <Navbar />
-            PAGE TEST
-            Icons made by 
-            <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
-            from 
-            <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+            <MainContent />
             <Footer />
+            </div>
         </div>
     )
 }

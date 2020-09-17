@@ -3,3 +3,12 @@ body {
  margin: 0;
  padding: 0;
 }
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding: 0 0 12vh 0;
+}
