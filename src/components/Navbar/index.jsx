@@ -16,25 +16,25 @@ function NavBar() {
                     </li>
                     <li className="nav-item">
                         <a href="/" className="nav-link">
-                            <img src={FoodCartImage}/>
+                            <img src={FoodCartImage} alt="Home"/>
                             <span className="link-text">HOME</span>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="/" className="nav-link">
-                        <img src={MenuImage}/>
+                        <a href="/menu" className="nav-link">
+                        <img src={MenuImage} alt="Menu"/>
                             <span className="link-text">MENU</span>
                         </a>
                     </li>
                     <li className="nav-item">
                         <a href="/" className="nav-link">
-                            <img src={DinnerTableImage}/>
+                            <img src={DinnerTableImage} alt="Reservation"/>
                             <span className="link-text">RESERVATION</span>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="/menu" className="nav-link">
-                            <i class="fas fa-question"></i>
+                        <a href="/about" className="nav-link">
+                            <i class="fas fa-question" alt="About"></i>
                             <span className="link-text">ABOUT</span>
                         </a>
                     </li>

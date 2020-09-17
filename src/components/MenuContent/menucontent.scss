@@ -3,18 +3,26 @@ $textSecondary: #ececec;
 $bgPrimary: #23232e;
 $bgSecondary: #141418;
 
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu-header {
     font-size: 3rem;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     color: $textPrimary;
 }
 
 .menu {
+    width: 75%;
     list-style: none;
     display: flex;
     flex-direction: column;
-    background: #f78b70;
+    background: #f5ded9;
 }
 
 .menu-item {
