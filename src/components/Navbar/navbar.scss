@@ -24,6 +24,7 @@ body::-webkit-scrollbar {
       position: fixed;
       background-color: $bgPrimary;
       transition: width 200ms ease;
+      z-index: 2;
   }
 
   .navbar-nav {

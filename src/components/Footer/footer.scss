@@ -5,9 +5,10 @@ $bgSecondary: #141418;
 
 .footer {
     width: 100vw;
-    height: 25vh;
+    height: 12vh;
     position: absolute;
     bottom: 0;
+    z-index: 1;
     background: $bgSecondary;
     color: $textPrimary;
     align-items: center;
@@ -18,5 +19,5 @@ $bgSecondary: #141418;
 
 .social-item {
     padding: 0 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
 }
