@@ -12,21 +12,21 @@ function NavBar() {
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">
+                        <a href="/" className="nav-link">
                             <i class="fas fa-question"></i>
-                            <span className="link-text">POINT 1</span>
+                            <span className="link-text">HOME</span>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">
+                        <a href="/about" className="nav-link">
                             <i class="fas fa-question"></i>
-                            <span className="link-text">POINT 2</span>
+                            <span className="link-text">ABOUT</span>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">
+                        <a href="/menu" className="nav-link">
                             <i class="fas fa-question"></i>
-                            <span className="link-text">POINT 3</span>
+                            <span className="link-text">MENU</span>
                         </a>
                     </li>
                     <li className="nav-item">
