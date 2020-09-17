@@ -27,7 +27,7 @@ function NavBar() {
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="/" className="nav-link">
+                        <a href="/reservation" className="nav-link">
                             <img src={DinnerTableImage} alt="Reservation"/>
                             <span className="link-text">RESERVATION</span>
                         </a>

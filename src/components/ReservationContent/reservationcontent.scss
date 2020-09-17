@@ -1,0 +1,11 @@
+$textPrimary: #f78b70;
+$textSecondary: #ececec;
+$bgPrimary: #23232e;
+$bgSecondary: #141418;
+
+.reservation-header {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color: $textPrimary;
+}

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import About from './pages/About';
+import Reservation from './pages/Reservation';
 import './App.scss';
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route exact path="/about">
             <About />
+          </Route>
+          <Route exact path="/reservation">
+            <Reservation />
           </Route>
         </Switch>
       </div>
