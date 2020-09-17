@@ -9,3 +9,51 @@ $bgSecondary: #141418;
     justify-content: center;
     color: $textPrimary;
 }
+
+.reservation-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation-form {
+    width: 60vw;
+    color: $textPrimary;
+    background: $bgPrimary;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.reservation-input {
+    padding: 0.5rem 0;
+}
+
+input[type=text], select {
+    width: 75%;
+    margin: 2rem 0 0 0;
+    font-size: 2rem;
+    color: $textSecondary;
+    background: none;
+    border: none;
+    border-bottom: 0.1rem solid #f78b70;
+  }
+
+  input[type=submit] {
+    font-size: 2rem;
+    margin: 2rem 0 0 0;
+    padding: 1rem;
+    background-color: #f78b70;
+    color: white;
+    align-self: center;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  select {
+      width: 20%;
+  }
