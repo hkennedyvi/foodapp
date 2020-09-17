@@ -1,10 +1,14 @@
 import React from 'react';
-import Home from './pages/Home'
+import Home from './pages/Home';
+import Menu from './pages/Menu';
 import './App.scss';
 
 function App() {
   return (
-    <Home />
+    <div>
+    {/* <Home /> */}
+    <Menu />
+    </div>
   );
 }
 

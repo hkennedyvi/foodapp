@@ -1,0 +1,52 @@
+$textPrimary: #7bdbdb;
+$textSecondary: #ececec;
+$bgPrimary: #23232e;
+$bgSecondary: #141418;
+
+.menu-header {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color: $textPrimary;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    display: flex;
+    width: 5rem;
+    height: 6rem;
+    background: $bgPrimary;
+    transition: width 500ms, height 500ms ease;
+    transition-delay: 100ms;
+}
+
+.menu-item-icon {
+    font-size: 5rem;
+    color: $textSecondary
+}
+
+.menu-item-text {
+    display: flex;
+    flex-direction: column;
+    color: $textSecondary;
+}
+
+.menu-item-title, .menu-item-detail {
+    display: none;
+}
+
+
+
+.menu-item:hover .menu-item-title, .menu-item:hover .menu-item-detail {
+    display: inline;
+}
+
+.menu-item:hover {
+    width: 50rem;
+    height: 20rem;
+}
