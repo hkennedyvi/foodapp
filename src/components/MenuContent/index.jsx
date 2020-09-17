@@ -14,14 +14,6 @@ function MenuContent() {
                         <span className="menu-item-title">FOOD</span>
                         <p className="menu-item-detail">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non diam phasellus vestibulum lorem sed risus ultricies tristique. Nullam ac tortor vitae purus faucibus ornare suspendisse sed.
-                        </p>
-                    </div>
-                </li>
-                <li className="menu-item">
-                    <i class="fas fa-hamburger menu-item-icon"></i>
-                    <div className="menu-item-text">
-                        <span className="menu-item-title">FOOD</span>
-                        <p className="menu-item-detail">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non diam phasellus vestibulum lorem sed risus ultricies tristique. Nullam ac tortor vitae purus faucibus ornare suspendisse sed.
                         </p>
                     </div>
@@ -31,6 +23,17 @@ function MenuContent() {
                     <div className="menu-item-text">
                         <span className="menu-item-title">FOOD</span>
                         <p className="menu-item-detail">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non diam phasellus vestibulum lorem sed risus ultricies tristique. Nullam ac tortor vitae purus faucibus ornare suspendisse sed.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non diam phasellus vestibulum lorem sed risus ultricies tristique. Nullam ac tortor vitae purus faucibus ornare suspendisse sed.
+                        </p>
+                    </div>
+                </li>
+                <li className="menu-item">
+                    <i class="fas fa-hamburger menu-item-icon"></i>
+                    <div className="menu-item-text">
+                        <span className="menu-item-title">FOOD</span>
+                        <p className="menu-item-detail">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non diam phasellus vestibulum lorem sed risus ultricies tristique. Nullam ac tortor vitae purus faucibus ornare suspendisse sed.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non diam phasellus vestibulum lorem sed risus ultricies tristique. Nullam ac tortor vitae purus faucibus ornare suspendisse sed.
                         </p>
                     </div>

@@ -1,4 +1,4 @@
-$textPrimary: #7bdbdb;
+$textPrimary: #f78b70;
 $textSecondary: #ececec;
 $bgPrimary: #23232e;
 $bgSecondary: #141418;
@@ -61,6 +61,11 @@ body::-webkit-scrollbar {
       min-width: 2rem;
       margin: 0 1.5rem;
   }
+
+  .nav-link img {
+    max-width: 4rem;
+    max-height: 4rem;
+}
 
   .logo {
       font-weight: bold;

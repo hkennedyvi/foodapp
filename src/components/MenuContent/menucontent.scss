@@ -1,4 +1,4 @@
-$textPrimary: #7bdbdb;
+$textPrimary: #f78b70;
 $textSecondary: #ececec;
 $bgPrimary: #23232e;
 $bgSecondary: #141418;
@@ -14,14 +14,14 @@ $bgSecondary: #141418;
     list-style: none;
     display: flex;
     flex-direction: column;
-    background: red;
+    background: #f78b70;
 }
 
 .menu-item {
     display: flex;
     width: 5rem;
     height: 6rem;
-    background: $bgPrimary;
+    // background: $bgPrimary;
     transition: width 500ms, height 500ms ease;
     transition-delay: 100ms;
 }
@@ -34,7 +34,7 @@ $bgSecondary: #141418;
 .menu-item-text {
     display: flex;
     flex-direction: column;
-    color: $textSecondary;
+    color: black;
 }
 
 .menu-item-title, .menu-item-detail {
@@ -48,6 +48,11 @@ $bgSecondary: #141418;
 }
 
 .menu-item:hover {
-    width: 50rem;
-    height: 20rem;
+    width: 90%;
+    height: 10rem;
+}
+
+.menu-item:hover .menu-item-text {
+    background: #f0c5bb;
+    border-radius: 0.5em;
 }

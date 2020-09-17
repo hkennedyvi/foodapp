@@ -1,5 +1,8 @@
 import React from 'react';
 import './navbar.scss';
+import MenuImage from '../../assets/menu.png';
+import FoodCartImage from '../../assets/foodCart.png';
+import DinnerTableImage from '../../assets/dinnerTable.png';
 
 function NavBar() {
     return (
@@ -13,26 +16,26 @@ function NavBar() {
                     </li>
                     <li className="nav-item">
                         <a href="/" className="nav-link">
-                            <i class="fas fa-question"></i>
+                            <img src={FoodCartImage}/>
                             <span className="link-text">HOME</span>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="/about" className="nav-link">
-                            <i class="fas fa-question"></i>
-                            <span className="link-text">ABOUT</span>
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="/menu" className="nav-link">
-                            <i class="fas fa-question"></i>
+                        <a href="/" className="nav-link">
+                        <img src={MenuImage}/>
                             <span className="link-text">MENU</span>
                         </a>
                     </li>
                     <li className="nav-item">
                         <a href="/" className="nav-link">
+                            <img src={DinnerTableImage}/>
+                            <span className="link-text">RESERVATION</span>
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="/menu" className="nav-link">
                             <i class="fas fa-question"></i>
-                            <span className="link-text">POINT 4</span>
+                            <span className="link-text">ABOUT</span>
                         </a>
                     </li>
                 </ul>
