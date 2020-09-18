@@ -1,5 +1,6 @@
 import React from 'react';
 import './menucontent.scss';
+import BurgerImage from '../../assets/burger.png';
 
 function MenuContent() {
     return (
@@ -8,8 +9,11 @@ function MenuContent() {
                 <h1>what to eat?</h1>
             </div>
             <ul className="menu">
+            <div className="menu-header">
+                <h1>dinner.</h1>
+            </div>
                 <li className="menu-item">
-                    <i class="fas fa-hamburger menu-item-icon"></i>
+                    <img className="menu-item-icon" src={BurgerImage} alt=""/>
                     <div className="menu-item-text">
                         <span className="menu-item-title">FOOD</span>
                         <p className="menu-item-detail">
@@ -19,7 +23,7 @@ function MenuContent() {
                     </div>
                 </li>
                 <li className="menu-item">
-                    <i class="fas fa-hamburger menu-item-icon"></i>
+                    <img className="menu-item-icon" src={BurgerImage} alt=""/>
                     <div className="menu-item-text">
                         <span className="menu-item-title">FOOD</span>
                         <p className="menu-item-detail">
@@ -29,7 +33,7 @@ function MenuContent() {
                     </div>
                 </li>
                 <li className="menu-item">
-                    <i class="fas fa-hamburger menu-item-icon"></i>
+                    <img className="menu-item-icon" src={BurgerImage} alt=""/>
                     <div className="menu-item-text">
                         <span className="menu-item-title">FOOD</span>
                         <p className="menu-item-detail">

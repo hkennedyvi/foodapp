@@ -12,35 +12,40 @@ $bgSecondary: #141418;
 
 .menu-header {
     font-size: 3rem;
-    // display: flex;
-    // justify-content: center;
+    align-self: center;
     color: $textPrimary;
 }
 
 .menu {
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 0.5rem;
+    padding: 0 2rem;
     width: 75%;
     list-style: none;
     display: flex;
     flex-direction: column;
-    background: #f5ded9;
 }
 
 .menu-item {
     display: flex;
     width: 5rem;
     height: 6rem;
-    // background: $bgPrimary;
     transition: width 500ms, height 500ms ease;
     transition-delay: 100ms;
 }
 
 .menu-item-icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.menu-item-title {
     font-size: 5rem;
-    color: $textSecondary
 }
 
 .menu-item-text {
     display: flex;
+    padding: 2rem;
     flex-direction: column;
     color: black;
 }
@@ -57,7 +62,7 @@ $bgSecondary: #141418;
 
 .menu-item:hover {
     width: 90%;
-    height: 10rem;
+    height: 40%;
 }
 
 .menu-item:hover .menu-item-text {
