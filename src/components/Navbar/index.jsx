@@ -10,8 +10,8 @@ function NavBar() {
                 <ul className="navbar-nav">
                     <li className="logo">
                         <a href="/" className="nav-link">
-                            <span class="link-text logo-text">Restaurant</span>
-                            <i class="fas fa-arrow-right"></i>
+                            <span className="link-text logo-text">Restaurant</span>
+                            <i className="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li className="nav-item">
@@ -34,7 +34,7 @@ function NavBar() {
                     </li>
                     <li className="nav-item">
                         <a href="/about" className="nav-link">
-                            <i class="fas fa-question" alt="About"></i>
+                            <i className="fas fa-question" alt="About"></i>
                             <span className="link-text">ABOUT</span>
                         </a>
                     </li>

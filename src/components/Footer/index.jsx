@@ -17,9 +17,9 @@ function Footer() {
                 </p>
             </div>
             <div className="social">
-                <i class="fab fa-facebook social-item"></i>
-                <i class="fab fa-twitter social-item"></i>
-                <i class="fab fa-instagram social-item"></i>
+                <i className="fab fa-facebook social-item"></i>
+                <i className="fab fa-twitter social-item"></i>
+                <i className="fab fa-instagram social-item"></i>
             </div>
         </section>
     )
