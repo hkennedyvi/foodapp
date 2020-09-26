@@ -4,11 +4,14 @@ $bgPrimary: #23232e;
 $bgSecondary: #141418;
 
 .reservation-header {
-    font-size: 3rem;
+    font-size: 6rem;
     display: flex;
     justify-content: center;
     color: $textPrimary;
-    text-shadow: 0 0 20px $bgSecondary;
+    text-shadow: -1px 2px 2px #000,
+				  1px 2px 2px #000,
+				  1px -2px 0 #000,
+				 -1px -2px 0 #000;
 }
 
 .reservation-section {
@@ -46,12 +49,12 @@ input[type=text], select {
   input[type=submit] {
     font-size: 2rem;
     margin: 2rem 0 0 0;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #f78b70;
     color: white;
     align-self: center;
     border: none;
-    border-radius: 1rem;
+    border-radius: 3rem;
     cursor: pointer;
   }
 

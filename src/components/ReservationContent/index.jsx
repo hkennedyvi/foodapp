@@ -4,8 +4,8 @@ import './reservationcontent.scss';
 function ReservationContent() {
     return (
         <main className="reservation-section">
-            <div className="reservation-header">
-                <h1>Make A Reservation</h1>
+            <div>
+                <h1 className="reservation-header">get a table.</h1>
             </div>
             <form className="reservation-form">
                 <label className="reservation-input">

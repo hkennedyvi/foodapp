@@ -5,11 +5,11 @@ import BurgerImage from '../../assets/burger.png';
 function MenuContent() {
     return (
         <main className="menu-section">
-            <div className="menu-header">
-                <h1>what to eat?</h1>
+            <div >
+                <h1 className="menu-header">what to eat?</h1>
             </div>
             <ul className="menu">
-                <div className="menu-header">
+                <div className="menu-title-header">
                     <h1>dinner.</h1>
                 </div>
                 <li className="menu-item">
