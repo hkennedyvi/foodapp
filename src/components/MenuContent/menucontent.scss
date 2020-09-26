@@ -14,6 +14,7 @@ $bgSecondary: #141418;
     font-size: 3rem;
     align-self: center;
     color: $textPrimary;
+    text-shadow: 0 0 20px $bgSecondary;
 }
 
 .menu {
@@ -53,7 +54,6 @@ $bgSecondary: #141418;
 .menu-item-title, .menu-item-detail {
     display: none;
 }
-
 
 
 .menu-item:hover .menu-item-title, .menu-item:hover .menu-item-detail {
