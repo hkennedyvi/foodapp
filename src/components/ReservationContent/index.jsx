@@ -17,35 +17,39 @@ function ReservationContent() {
                     <input type="text" name="lastName" />
                 </label>
                 <div>
-                <label className="reservation-input">
-                    Guests:
+                    <label className="reservation-input">
+                        Guests:
                     <select>
-                        <option value="1">1</option>
-                        <option selected value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
-                </label>
-                <label className="reservation-input">
-                    Time:
+                            <option value="1">1</option>
+                            <option selected value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </label>
+                    <label className="reservation-input">
+                        Time:
                     <select>
-                        <option value="6:00">6:00</option>
-                        <option value="6:30">6:30</option>
-                        <option selected value="7:00">7:00</option>
-                        <option value="7:30">7:30</option>
-                    </select>
-                </label>
-                <label className="reservation-input">
-                    Date:
+                            <option value="6:00">6:00</option>
+                            <option value="6:30">6:30</option>
+                            <option selected value="7:00">7:00</option>
+                            <option value="7:30">7:30</option>
+                        </select>
+                    </label>
+                    <label className="reservation-input">
+                        Date:
                     <select>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option selected value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
-                </label>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option selected value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </label>
                 </div>
-                <input type="submit" value="Submit" />
+                <label className="reservation-input">
+                    Notes:
+                </label>
+                <textarea className="reservation-input" placeholder="Birthday? Allergies? Put all that good stuff here."></textarea>
+                <input type="submit" value="BOOK IT" />
             </form>
         </main>
     )

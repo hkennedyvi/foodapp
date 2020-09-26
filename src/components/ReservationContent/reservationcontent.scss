@@ -30,6 +30,7 @@ $bgSecondary: #141418;
     flex-direction: column;
     padding: 2rem;
     font-size: 2rem;
+    margin: 0 0 3rem 0;
 }
 
 .reservation-input {
@@ -46,8 +47,18 @@ input[type=text], select {
     border-bottom: 0.1rem solid #f78b70;
   }
 
+  textarea {
+      background: none;
+      border: 0.1rem solid $textPrimary;
+      border-radius: 0.5rem;
+      height: 50vh;
+      font-size: 2rem;
+      color: $textSecondary;
+  }
+
   input[type=submit] {
     font-size: 2rem;
+    font-family: 'Solway', serif;
     margin: 2rem 0 0 0;
     padding: 1.5rem;
     background-color: #f78b70;

@@ -13,7 +13,7 @@ function AboutContent() {
                 </div>
                 <div className="about-blurb">
                     <h1 className="about-blurb-header">it all started when...</h1>
-                    <p className-="about-blurb-text">
+                    <p className="about-blurb-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Sit amet aliquam id diam maecenas ultricies. Aliquam id diam maecenas ultricies mi eget mauris pharetra et.
                         Pellentesque elit eget gravida cum. Sit amet consectetur adipiscing elit. Duis ultricies lacus sed turpis tincidunt.
