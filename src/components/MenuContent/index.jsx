@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './menucontent.scss';
+import PancakeImage from '../../assets/pancakes.png';
 import BurgerImage from '../../assets/burger.png';
+import PizzaImage from '../../assets/pizza.png'
+
 
 function MenuContent() {
 
@@ -9,7 +12,8 @@ function MenuContent() {
         items: [{
             title: "pancakes",
             ingredients: "lettuce, tomato, onion",
-            price: 9
+            price: 9,
+            image: PancakeImage
         },
         {
             title: "sandwich",
@@ -23,7 +27,8 @@ function MenuContent() {
         items: [{
             title: "burger",
             ingredients: "lettuce, tomato, onion",
-            price: 9
+            price: 9,
+            image: BurgerImage
         },
         {
             title: "sandwich",
@@ -35,9 +40,10 @@ function MenuContent() {
     const dinnerMenu = {
         title: "dinner.",
         items: [{
-            title: "steak",
+            title: "pizza",
             ingredients: "lettuce, tomato, onion",
-            price: 9
+            price: 9,
+            image: PizzaImage
         },
         {
             title: "sandwich",
@@ -77,7 +83,7 @@ function MenuContent() {
                     <h1>{menuType.title}</h1>
                 </div>
                 <li className="menu-item">
-                    <img className="menu-item-icon" src={BurgerImage} alt="" />
+                    <img className="menu-item-icon" src={menuType.items[0].image} alt="" />
                     <div className="menu-item-text">
                         <span className="menu-item-title">{menuType.items[0].title}</span>
                         <p className="menu-item-detail">
