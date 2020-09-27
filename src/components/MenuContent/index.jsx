@@ -51,14 +51,14 @@ function MenuContent() {
         <main className="menu-section">
             <div >
                 <h1 className="menu-header">what to eat?</h1>
-                <form action="">
-                    <select>
+            </div>
+            <form action="">
+                    <select className="menu-select">
                         <option value="breakfast">Breakfast</option>
                         <option selected value="lunch">Lunch</option>
                         <option value="dinner">Dinner</option>
                     </select>
                 </form>
-            </div>
             <ul className="menu">
                 <div className="menu-title-header">
                     <h1>{lunchMenu.type}</h1>

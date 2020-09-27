@@ -20,6 +20,18 @@ $bgSecondary: #141418;
 				-1px -2px 0 #000;
 }
 
+.menu-select {
+    width: 240px;
+    font-size: 3rem;
+    font-family: 'Solway', serif;
+    align-self: center;
+    background: $bgPrimary;
+    color: $textSecondary;
+    padding: 0.5rem 1.5rem;
+    margin: -2rem 0 3rem 0;
+    border: $textPrimary solid 2px;
+}
+
 .menu {
     background-color:rgba(0, 0, 0, 0.7);
     border-radius: 0.5rem;
