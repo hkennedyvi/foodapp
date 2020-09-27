@@ -4,11 +4,10 @@ import BurgerImage from '../../assets/burger.png';
 
 function MenuContent() {
 
-    // const [menuType, setMenuType] = useState([]);
     const breakfastMenu = {
-        type: "lunch.",
+        title: "breakfast.",
         items: [{
-            title: "burger",
+            title: "pancakes",
             ingredients: "lettuce, tomato, onion",
             price: 9
         },
@@ -20,7 +19,7 @@ function MenuContent() {
     }
 
     const lunchMenu = {
-        type: "lunch.",
+        title: "lunch.",
         items: [{
             title: "burger",
             ingredients: "lettuce, tomato, onion",
@@ -34,9 +33,9 @@ function MenuContent() {
     }
 
     const dinnerMenu = {
-        type: "lunch.",
+        title: "dinner.",
         items: [{
-            title: "burger",
+            title: "steak",
             ingredients: "lettuce, tomato, onion",
             price: 9
         },
@@ -47,26 +46,40 @@ function MenuContent() {
         }]
     }
 
+    const [menuType, setMenuType] = useState(lunchMenu);
+
+    function chooseMenu(e) {
+        const menuSelect = e.target.value;
+        console.log(menuType);
+        if (menuSelect === "dinner") {
+            setMenuType(dinnerMenu);
+        } else if (menuSelect === "lunch") {
+            setMenuType(lunchMenu);
+        } else if (menuSelect === "breakfast") {
+            setMenuType(breakfastMenu);
+        }
+    }
+
     return (
         <main className="menu-section">
             <div >
                 <h1 className="menu-header">what to eat?</h1>
             </div>
-            <form action="">
-                    <select className="menu-select">
-                        <option value="breakfast">Breakfast</option>
-                        <option selected value="lunch">Lunch</option>
-                        <option value="dinner">Dinner</option>
-                    </select>
-                </form>
+            <form action="submit">
+                <select className="menu-select" onChange={chooseMenu}>
+                    <option value="breakfast">Breakfast</option>
+                    <option selected value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+            </form>
             <ul className="menu">
                 <div className="menu-title-header">
-                    <h1>{lunchMenu.type}</h1>
+                    <h1>{menuType.title}</h1>
                 </div>
                 <li className="menu-item">
                     <img className="menu-item-icon" src={BurgerImage} alt="" />
                     <div className="menu-item-text">
-                        <span className="menu-item-title">FOOD</span>
+                        <span className="menu-item-title">{menuType.items[0].title}</span>
                         <p className="menu-item-detail">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non diam phasellus vestibulum lorem sed risus ultricies tristique. Nullam ac tortor vitae purus faucibus ornare suspendisse sed.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non diam phasellus vestibulum lorem sed risus ultricies tristique. Nullam ac tortor vitae purus faucibus ornare suspendisse sed.
