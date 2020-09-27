@@ -33,13 +33,10 @@ $bgSecondary: #141418;
     margin: 0 0 3rem 0;
 }
 
-.reservation-input {
-    padding: 0.5rem 0;
-}
-
-input[type=text], select {
+.reservation-text-input {
     width: 75%;
     margin: 2rem 0 0 0;
+    padding: 0.5rem 0;
     font-size: 2rem;
     color: $textSecondary;
     background: none;
@@ -47,7 +44,18 @@ input[type=text], select {
     border-bottom: 0.1rem solid #f78b70;
   }
 
-  textarea {
+  .reservation-select {
+    width: 20%;
+    margin: 2rem 0 0 0;
+    padding: 0.5rem 0;
+    font-size: 2rem;
+    color: $textSecondary;
+    background: none;
+    border: none;
+    border-bottom: 0.1rem solid #f78b70;
+  }
+
+  .reservation-textarea {
       background: none;
       border: 0.1rem solid $textPrimary;
       border-radius: 0.5rem;
@@ -56,7 +64,7 @@ input[type=text], select {
       color: $textSecondary;
   }
 
-  input[type=submit] {
+  .reservation-submit-btn {
     font-size: 2rem;
     font-family: 'Solway', serif;
     margin: 2rem 0 0 0;
@@ -67,8 +75,4 @@ input[type=text], select {
     border: none;
     border-radius: 3rem;
     cursor: pointer;
-  }
-
-  select {
-      width: 20%;
   }

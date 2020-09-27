@@ -14,7 +14,7 @@ function MainContent() {
                     Pellentesque elit eget gravida cum. Sit amet consectetur adipiscing elit. Duis ultricies lacus sed turpis tincidunt. 
                     Sed elementum tempus egestas sed sed risus pretium quam. Pulvinar elementum integer enim neque volutpat ac tincidunt. 
                 </p>
-                <button className="btn">ENTER</button>
+                <button className="enter-btn">ENTER</button>
             </div>
         </main>
     )

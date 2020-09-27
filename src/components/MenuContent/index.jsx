@@ -1,16 +1,67 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './menucontent.scss';
 import BurgerImage from '../../assets/burger.png';
 
 function MenuContent() {
+
+    // const [menuType, setMenuType] = useState([]);
+    const breakfastMenu = {
+        type: "lunch.",
+        items: [{
+            title: "burger",
+            ingredients: "lettuce, tomato, onion",
+            price: 9
+        },
+        {
+            title: "sandwich",
+            ingredients: "turkey, bacon, avocado",
+            price: 8
+        }]
+    }
+
+    const lunchMenu = {
+        type: "lunch.",
+        items: [{
+            title: "burger",
+            ingredients: "lettuce, tomato, onion",
+            price: 9
+        },
+        {
+            title: "sandwich",
+            ingredients: "turkey, bacon, avocado",
+            price: 8
+        }]
+    }
+
+    const dinnerMenu = {
+        type: "lunch.",
+        items: [{
+            title: "burger",
+            ingredients: "lettuce, tomato, onion",
+            price: 9
+        },
+        {
+            title: "sandwich",
+            ingredients: "turkey, bacon, avocado",
+            price: 8
+        }]
+    }
+
     return (
         <main className="menu-section">
             <div >
                 <h1 className="menu-header">what to eat?</h1>
+                <form action="">
+                    <select>
+                        <option value="breakfast">Breakfast</option>
+                        <option selected value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                    </select>
+                </form>
             </div>
             <ul className="menu">
                 <div className="menu-title-header">
-                    <h1>dinner.</h1>
+                    <h1>{lunchMenu.type}</h1>
                 </div>
                 <li className="menu-item">
                     <img className="menu-item-icon" src={BurgerImage} alt="" />
