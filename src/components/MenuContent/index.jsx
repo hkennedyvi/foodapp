@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './menucontent.scss';
-import PancakeImage from '../../assets/pancakes.png';
-import BurgerImage from '../../assets/burger.png';
-import PizzaImage from '../../assets/pizza.png'
+import PancakeImage from '../../assets/pancakes.svg';
+import BurgerImage from '../../assets/burger.svg';
+import PizzaImage from '../../assets/pizza.svg'
 
 
 function MenuContent() {
