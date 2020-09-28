@@ -1,70 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './menucontent.scss';
-import PancakeImage from '../../assets/pancakes.svg';
+// import PancakeImage from '../../assets/pancakes.svg';
 import BurgerImage from '../../assets/burger.svg';
-import PizzaImage from '../../assets/pizza.svg'
+// import PizzaImage from '../../assets/pizza.svg';
 
 
-function MenuContent() {
-
-    const breakfastMenu = {
-        title: "breakfast.",
-        items: [{
-            title: "pancakes",
-            ingredients: "lettuce, tomato, onion",
-            price: 9,
-            image: PancakeImage
-        },
-        {
-            title: "sandwich",
-            ingredients: "turkey, bacon, avocado",
-            price: 8
-        }]
-    }
-
-    const lunchMenu = {
-        title: "lunch.",
-        items: [{
-            title: "burger",
-            ingredients: "lettuce, tomato, onion",
-            price: 9,
-            image: BurgerImage
-        },
-        {
-            title: "sandwich",
-            ingredients: "turkey, bacon, avocado",
-            price: 8
-        }]
-    }
-
-    const dinnerMenu = {
-        title: "dinner.",
-        items: [{
-            title: "pizza",
-            ingredients: "lettuce, tomato, onion",
-            price: 9,
-            image: PizzaImage
-        },
-        {
-            title: "sandwich",
-            ingredients: "turkey, bacon, avocado",
-            price: 8
-        }]
-    }
-
-    const [menuType, setMenuType] = useState(lunchMenu);
-
-    function chooseMenu(e) {
-        const menuSelect = e.target.value;
-        console.log(menuType);
-        if (menuSelect === "dinner") {
-            setMenuType(dinnerMenu);
-        } else if (menuSelect === "lunch") {
-            setMenuType(lunchMenu);
-        } else if (menuSelect === "breakfast") {
-            setMenuType(breakfastMenu);
-        }
-    }
+function MenuContent(props) {
 
     return (
         <main className="menu-section">
@@ -72,14 +13,14 @@ function MenuContent() {
                 <h1 className="menu-header">what to eat?</h1>
             </div>
             <form action="submit">
-                <select className="menu-select" onChange={chooseMenu}>
+                <select className="menu-select" onChange={props.chooseMenu}>
                     <option value="breakfast">Breakfast</option>
                     <option selected value="lunch">Lunch</option>
                     <option value="dinner">Dinner</option>
                 </select>
             </form>
             <ul className="menu">
-                <div className="menu-title-header">
+                {/* <div className="menu-title-header">
                     <h1>{menuType.title}</h1>
                 </div>
                 <li className="menu-item">
@@ -91,7 +32,7 @@ function MenuContent() {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non diam phasellus vestibulum lorem sed risus ultricies tristique. Nullam ac tortor vitae purus faucibus ornare suspendisse sed.
                         </p>
                     </div>
-                </li>
+                </li> */}
                 <li className="menu-item">
                     <img className="menu-item-icon" src={BurgerImage} alt="" />
                     <div className="menu-item-text">
