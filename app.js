@@ -1,10 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.use((req, res, next) => {
-    res.status(200).json({
-        message: "SUCCESS!",
-    });
-});
+const menuRoutes = require('./api/routes/menus');
+
+app.use('/menus', menuRoutes);
 
 module.exports = app;
