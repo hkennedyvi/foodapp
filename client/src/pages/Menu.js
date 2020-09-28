@@ -3,9 +3,9 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import MenuContent from '../components/MenuContent';
 import API from '../utils/API';
-import PancakeImage from '../assets/pancakes.svg';
-import BurgerImage from '../assets/burger.svg';
-import PizzaImage from '../assets/pizza.svg';
+// import PancakeImage from '../assets/pancakes.svg';
+// import BurgerImage from '../assets/burger.svg';
+// import PizzaImage from '../assets/pizza.svg';
 
 
 
@@ -17,67 +17,27 @@ function Menu() {
 
     function loadMenus() {
         API.getMenus().then(res => {
-            console.log(res)
+            setMenus(res)
+            setSelectedMenu(res.data.lunchMenu)
         })
             .catch(err => console.log(err));
     }
 
-    const breakfastMenu = {
-        title: "breakfast.",
-        items: [{
-            title: "pancakes",
-            ingredients: "lettuce, tomato, onion",
-            price: 9,
-            image: PancakeImage
-        },
-        {
-            title: "sandwich",
-            ingredients: "turkey, bacon, avocado",
-            price: 8
-        }]
-    }
-
-    const lunchMenu = {
-        title: "lunch.",
-        items: [{
-            title: "burger",
-            ingredients: "lettuce, tomato, onion",
-            price: 9,
-            image: BurgerImage
-        },
-        {
-            title: "sandwich",
-            ingredients: "turkey, bacon, avocado",
-            price: 8
-        }]
-    }
-
-    const dinnerMenu = {
-        title: "dinner.",
-        items: [{
-            title: "pizza",
-            ingredients: "lettuce, tomato, onion",
-            price: 9,
-            image: PizzaImage
-        },
-        {
-            title: "sandwich",
-            ingredients: "turkey, bacon, avocado",
-            price: 8
-        }]
-    }
-
-    const [menuType, setMenuType] = useState(lunchMenu);
+    const [menus, setMenus] = useState();
+    const [selectedMenu, setSelectedMenu] = useState();
 
     function chooseMenu(e) {
         const menuSelect = e.target.value;
-        console.log(menuType);
+
         if (menuSelect === "dinner") {
-            setMenuType(dinnerMenu);
+            setSelectedMenu(menus.data.dinnerMenu);
+            console.log(selectedMenu);
         } else if (menuSelect === "lunch") {
-            setMenuType(lunchMenu);
+            setSelectedMenu(menus.data.lunchMenu);
+            console.log(selectedMenu);
         } else if (menuSelect === "breakfast") {
-            setMenuType(breakfastMenu);
+            setSelectedMenu(menus.data.breakfastMenu);
+            console.log(selectedMenu);
         }
     }
 
