@@ -13,9 +13,9 @@ function MenuContent(props) {
                 <h1 className="menu-header">what to eat?</h1>
             </div>
             <form action="submit">
-                <select className="menu-select" onChange={props.chooseMenu}>
+                <select defaultValue="lunch" className="menu-select" onChange={props.chooseMenu}>
                     <option value="breakfast">Breakfast</option>
-                    <option selected value="lunch">Lunch</option>
+                    <option value="lunch">Lunch</option>
                     <option value="dinner">Dinner</option>
                 </select>
             </form>

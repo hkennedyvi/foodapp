@@ -19,28 +19,28 @@ function ReservationContent() {
                 <div>
                     <label>
                         Guests:
-                    <select className="reservation-select">
+                    <select defaultValue="2" className="reservation-select">
                             <option value="1">1</option>
-                            <option selected value="2">2</option>
+                            <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                         </select>
                     </label>
                     <label>
                         Time:
-                    <select className="reservation-select">
+                    <select defaultValue="7:00" className="reservation-select">
                             <option value="6:00">6:00</option>
                             <option value="6:30">6:30</option>
-                            <option selected value="7:00">7:00</option>
+                            <option value="7:00">7:00</option>
                             <option value="7:30">7:30</option>
                         </select>
                     </label>
                     <label>
                         Date:
-                    <select className="reservation-select">
+                    <select defaultValue="3" className="reservation-select">
                             <option value="1">1</option>
                             <option value="2">2</option>
-                            <option selected value="3">3</option>
+                            <option value="3">3</option>
                             <option value="4">4</option>
                         </select>
                     </label>
