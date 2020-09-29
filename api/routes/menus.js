@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router();
+//Need to properly import image for menu items from assets folder
+// const burgerImage = url('../../assets/042-burger.png');
 
 router.get('/', (req, res, next) => {
     res.status(200).json({
@@ -7,7 +9,7 @@ router.get('/', (req, res, next) => {
             title: "breakfast.",
             items: [{
                 title: "pancakes",
-                ingredients: "lettuce, tomato, onion",
+                ingredients: "syrup, butter, hazelnuts",
                 price: 9,
                 // image: PancakeImage
             },
@@ -23,7 +25,7 @@ router.get('/', (req, res, next) => {
                 title: "burger",
                 ingredients: "lettuce, tomato, onion",
                 price: 9,
-                // image: BurgerImage
+                // image: burgerImage
             },
             {
                 title: "sandwich",
@@ -35,7 +37,7 @@ router.get('/', (req, res, next) => {
             title: "dinner.",
             items: [{
                 title: "pizza",
-                ingredients: "lettuce, tomato, onion",
+                ingredients: "pepperoni, mushrooms, peppers",
                 price: 9,
                 // image: PizzaImage
             },

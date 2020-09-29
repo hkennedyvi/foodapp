@@ -3,11 +3,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import MenuContent from '../components/MenuContent';
 import API from '../utils/API';
-// import PancakeImage from '../assets/pancakes.svg';
-// import BurgerImage from '../assets/burger.svg';
-// import PizzaImage from '../assets/pizza.svg';
-
-
 
 function Menu() {
 
@@ -17,8 +12,11 @@ function Menu() {
 
     function loadMenus() {
         API.getMenus().then(res => {
-            setMenus(res)
-            setSelectedMenu(res.data.lunchMenu)
+
+            // Retrieve menus from API
+            setMenus(res);
+            //Set default menu to lunch
+            setSelectedMenu(res.data.lunchMenu);
         })
             .catch(err => console.log(err));
     }
@@ -30,22 +28,26 @@ function Menu() {
         const menuSelect = e.target.value;
 
         if (menuSelect === "dinner") {
+
             setSelectedMenu(menus.data.dinnerMenu);
-            console.log(selectedMenu);
+
         } else if (menuSelect === "lunch") {
+
             setSelectedMenu(menus.data.lunchMenu);
-            console.log(selectedMenu);
+           
         } else if (menuSelect === "breakfast") {
+
             setSelectedMenu(menus.data.breakfastMenu);
-            console.log(selectedMenu);
-        }
-    }
+            
+        };
+    };
 
     return (
         <div className="page-container">
             <div className="content-wrap">
                 <Navbar />
-                <MenuContent chooseMenu={chooseMenu} />
+                <MenuContent chooseMenu={chooseMenu}
+                    selectedMenu={selectedMenu} />
                 <Footer />
             </div>
         </div>
