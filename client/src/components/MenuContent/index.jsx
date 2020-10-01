@@ -33,7 +33,8 @@ function MenuContent(props) {
                                     <span className="menu-item-title">{item.title}</span>
                                     <p className="menu-item-detail">
                                         {item.ingredients} <br />
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non diam phasellus vestibulum lorem sed risus ultricies tristique. Nullam ac tortor vitae purus faucibus ornare suspendisse sed.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<br />
+                                        {item.price}
                                     </p>
                                 </div>
                             </li>
