@@ -5,7 +5,6 @@ import BurgerImage from '../../assets/burger.svg';
 function MenuContent(props) {
 
     const menu = props.selectedMenu ? props.selectedMenu : "";
-    const menuItem = !menu.items ? "LOADING" : menu.items[0];
     const menuItems = !menu.items ? [] : menu.items;
 
     return (
