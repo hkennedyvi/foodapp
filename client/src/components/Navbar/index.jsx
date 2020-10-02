@@ -10,7 +10,7 @@ function NavBar() {
                 <ul className="navbar-nav">
                     <li className="logo">
                         <a href="/" className="nav-link">
-                            <span className="link-text logo-text">Restaurant</span>
+                            <span className="link-text logo-text">restaurant.</span>
                             <i className="fas fa-arrow-right"></i>
                         </a>
                     </li>
