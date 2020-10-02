@@ -8,16 +8,16 @@ function ReservationContent() {
                 <h1 className="reservation-header">get a table.</h1>
             </div>
             <form className="reservation-form">
-                <label>
+                <label className="reservation-label">
                     First Name:
                     <input type="text" name="firstName" className="reservation-text-input" />
                 </label>
-                <label>
+                <label className="reservation-label">
                     Last Name:
                     <input type="text" name="lastName" className="reservation-text-input" />
                 </label>
                 <div>
-                    <label>
+                    <label className="reservation-label">
                         Guests:
                     <select defaultValue="2" className="reservation-select">
                             <option value="1">1</option>
@@ -26,7 +26,7 @@ function ReservationContent() {
                             <option value="4">4</option>
                         </select>
                     </label>
-                    <label>
+                    <label className="reservation-label">
                         Time:
                     <select defaultValue="7:00" className="reservation-select">
                             <option value="6:00">6:00</option>
@@ -35,7 +35,7 @@ function ReservationContent() {
                             <option value="7:30">7:30</option>
                         </select>
                     </label>
-                    <label>
+                    <label className="reservation-label">
                         Date:
                     <select defaultValue="3" className="reservation-select">
                             <option value="1">1</option>
@@ -48,7 +48,7 @@ function ReservationContent() {
                 <label>
                     Notes:
                 </label>
-                <textarea className="reservation-textarea" placeholder="Birthday? Allergies? Put all that good stuff here."></textarea>
+                <textarea className="reservation-textarea" placeholder="Birthday? Allergies? All that good stuff goes right here."></textarea>
                 <input className="reservation-submit-btn" type="submit" value="BOOK IT" />
             </form>
         </main>

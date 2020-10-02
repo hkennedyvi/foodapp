@@ -76,3 +76,25 @@ $bgSecondary: #141418;
     border-radius: 3rem;
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 600px) {
+    .reservation-form {
+        margin: 0 0 15rem 0;
+        width: 75vw;
+    }
+
+    .reservation-text-input, .reservation-select {
+        width: 100%;
+        margin: 0;
+    }
+//select labels need work
+    .reservation-label {
+      margin: 2rem 0 0 0;
+    }
+
+    .reservation-textarea {
+      padding: 1rem;
+      margin: 2rem 0 0 0;
+    }
+
+}
