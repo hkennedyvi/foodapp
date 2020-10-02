@@ -96,6 +96,14 @@ $bgSecondary: #141418;
     .nav-link {
         justify-content: center;
     }
+
+    .nav-item:hover {
+        border: $textPrimary 1px solid;
+    }
+
+    .nav-item:last-child {
+        margin: 0;
+    }
 }
 
 /* Large Screens */
