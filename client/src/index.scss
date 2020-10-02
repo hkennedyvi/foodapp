@@ -7,6 +7,10 @@ body {
  font-family: 'Solway', serif;
 }
 
+main {
+    margin: 0 0 0 5rem;
+}
+
 .page-container {
     position: relative;
     min-height: 100vh;
@@ -14,4 +18,10 @@ body {
 
 .content-wrap {
     padding: 0 0 12vh 0;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        margin: 0;
+    }
 }

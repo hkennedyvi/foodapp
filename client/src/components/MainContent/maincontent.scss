@@ -3,10 +3,6 @@ $textSecondary: #ececec;
 $bgPrimary: #23232e;
 $bgSecondary: #141418;
 
-main {
-    margin: 0 0 0 5rem;
-}
-
 .main-home {
     display: flex;
 }
@@ -46,4 +42,20 @@ main {
     border: none;
     border-radius: 3rem;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-header {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .main-blurb {
+        text-align: center;
+    }
 }
