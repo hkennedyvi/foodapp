@@ -3,19 +3,6 @@ $textSecondary: #ececec;
 $bgPrimary: #23232e;
 $bgSecondary: #141418;
 
-body::-webkit-scrollbar {
-    width: 0.5rem;
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #444;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background: #eeeeee;
-    border-radius: 0.5rem;
-  }
-
   .navbar {
       position: fixed;
       background-color: $bgPrimary;
