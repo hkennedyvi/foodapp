@@ -25,9 +25,9 @@ function MenuContent(props) {
                 </div>
                 <ul>
                 {menuItems ?
-                    menuItems.map(item => {
+                    menuItems.map((item, index) => {
                         return (
-                            <li className="menu-item">
+                            <li key={index} className="menu-item">
                                 <img className="menu-item-icon" src={BurgerImage} alt="" />
                                 <div className="menu-item-text">
                                     <span className="menu-item-title">{item.title}</span>
