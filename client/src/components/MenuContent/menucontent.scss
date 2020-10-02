@@ -68,27 +68,19 @@ $bgSecondary: #141418;
 }
 
 .menu-item-text {
-    display: flex;
+    display: none;
     padding: 2rem;
     flex-direction: column;
     color: black;
 }
 
-.menu-item-title, .menu-item-detail {
-    display: none;
-}
-
-
-.menu-item:hover .menu-item-title, .menu-item:hover .menu-item-detail {
+.menu-item:hover .menu-item-text {
     display: inline;
+    background: #f0c5bb;
+    border-radius: 0.5em;
 }
 
 .menu-item:hover {
     width: 90%;
-    height: 40%;
-}
-
-.menu-item:hover .menu-item-text {
-    background: #f0c5bb;
-    border-radius: 0.5em;
+    height: 100%;
 }
