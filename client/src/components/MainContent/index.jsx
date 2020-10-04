@@ -9,10 +9,9 @@ function MainContent() {
             </div>
             <div className="main-blurb">
                 <p className="main-blurb-text">
+                <h2 className="secondary-header">When it comes to serving our community...</h2>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Sit amet aliquam id diam maecenas ultricies. Aliquam id diam maecenas ultricies mi eget mauris pharetra et. 
-                    Pellentesque elit eget gravida cum. Sit amet consectetur adipiscing elit. Duis ultricies lacus sed turpis tincidunt. 
-                    Sed elementum tempus egestas sed sed risus pretium quam. Pulvinar elementum integer enim neque volutpat ac tincidunt. 
                 </p>
                 <button className="enter-btn">ENTER</button>
             </div>
