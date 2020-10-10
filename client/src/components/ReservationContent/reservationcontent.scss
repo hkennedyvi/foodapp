@@ -78,6 +78,9 @@ $bgSecondary: #141418;
   }
 
   @media only screen and (max-width: 600px) {
+    .reservation-header {
+      font-size: 5rem;
+    }
     .reservation-form {
         margin: 0 0 15rem 0;
         width: 75vw;
