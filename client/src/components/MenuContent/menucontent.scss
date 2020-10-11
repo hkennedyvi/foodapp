@@ -91,6 +91,15 @@ $bgSecondary: #141418;
 }
 
 @media only screen and (max-width: 600px) {
+    .menu-header {
+        font-size: 5rem;
+        margin: 6.5rem 0;
+      }
+
+      .menu-title-header {
+          font-size: 2.5rem;
+      }
+
     .menu {
         margin: 0 0 15rem 0;
     }
