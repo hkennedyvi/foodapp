@@ -1,5 +1,6 @@
 import React from 'react';
 import './aboutcontent.scss';
+import chefImage from '../../assets/chef.jpg'
 
 function AboutContent() {
     return (
@@ -8,8 +9,8 @@ function AboutContent() {
                 <h1 className="about-header">our story.</h1>
             </div>
             <div className="about-main">
-                <div className="about-image">
-                    <h1>PIC OF OWNERS</h1>
+                <div className="about-image-container">
+                    <img className="about-image" src={chefImage} />
                 </div>
                 <div className="about-blurb">
                     <h1 className="about-blurb-header">it all started when...</h1>

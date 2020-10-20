@@ -27,10 +27,13 @@ $bgSecondary: #141418;
     width: 75%;
 }
 
+.about-image-container {
+   border: solid 1px $bgPrimary;
+}
+
 .about-image {
-    background:$bgSecondary;
-    color: $textSecondary;
-    padding: 1rem 3rem;
+    height: 100%;
+    width: 100%;
 }
 
 .about-blurb {
@@ -73,12 +76,8 @@ $bgSecondary: #141418;
     
     .about-main {
         display: flex;
-        flex-direction: column;
-        height: 80vh;
+        flex-direction: column-reverse;
+        height: 180vh;
         margin: 0 0 10rem 0;
-    }
-
-    .about-image {
-        text-align: center;
     }
 }
