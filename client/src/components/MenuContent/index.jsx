@@ -34,7 +34,7 @@ function MenuContent(props) {
                                     <p className="menu-item-detail">
                                         {item.ingredients} <br />
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<br />
-                                        {item.price}
+                                        $ {item.price}
                                     </p>
                                 </div>
                             </li>
