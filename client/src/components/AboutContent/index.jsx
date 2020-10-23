@@ -10,7 +10,7 @@ function AboutContent() {
             </div>
             <div className="about-main">
                 <div className="about-image-container">
-                    <img className="about-image" src={chefImage} />
+                    <img className="about-image" src={chefImage} alt="chef" />
                 </div>
                 <div className="about-blurb">
                     <h1 className="about-blurb-header">it all started when...</h1>
