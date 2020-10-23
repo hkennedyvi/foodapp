@@ -5,6 +5,7 @@ const app = express();
 const path = require("path");
 
 const cors = require('cors');
+const { urlencoded } = require('express');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

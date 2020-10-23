@@ -1,4 +1,3 @@
-const { urlencoded } = require('express');
 const express = require('express');
 const router = express.Router();
 //Need to properly import image for menu items from assets folder
