@@ -12,7 +12,7 @@ function Menu() {
 
     function loadMenus() {
         API.getMenus().then(res => {
-            
+            console.log(res.data);
             // Retrieve menus from API
             setMenus(res.data);
             //Set default menu to lunch
