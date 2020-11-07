@@ -1,27 +1,33 @@
-const express = require('express');
+require('dotenv').config();
 
-const PORT = process.env.PORT || 3002;
+const express = require('express');
 const app = express();
-const path = require("path");
+const PORT = process.env.PORT || 3002;
+const mongoose = require("mongoose");
+const bodyParser = require('body-parser');
 
 const cors = require('cors');
+const routes = require("./routes");
 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(bodyParser.json());
 app.use(cors());
 
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
-  }
+  app.use(express.static("client/build"));
+};
 
-const menuRoutes = require('./api/routes/menus');
+app.use(routes);
 
-app.use('/menus', menuRoutes);
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 });
 
-app.listen(PORT, function() {
-    console.log(`🌎 ==> API server now on port ${PORT}!`);
-  });
+mongoose.connection.on('connected', () => {
+  console.log('Mongoose Connected');
+});
+
+app.listen(PORT, function () {
+  console.log(`🌎 ==> Server started on ${PORT}!`);
+});

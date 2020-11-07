@@ -1,14 +1,19 @@
-const express = require('express');
-const router = express.Router();
-//Need to properly import image for menu items from assets folder
-// const burgerImage = require('../../assets/burger');
+require('dotenv').config();
 
-router.get('/', (req, res, next) => {
-    res.status(200).json({
-        breakfastMenu : {
-            title: "breakfast.",
-            items: [
-                {
+const mongoose = require('mongoose');
+const DB = require('../models');
+
+mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
+const menuSeed = [
+    {
+        type: "breakfastMenu",
+        title: "breakfast.",
+        items: [
+            {
                 title: "pancakes",
                 ingredients: "syrup, butter, hazelnuts",
                 price: 9,
@@ -18,22 +23,22 @@ router.get('/', (req, res, next) => {
                 title: "waffles",
                 ingredients: "whipped cream, strawberries, bananas",
                 price: 8
-            }, 
+            },
             {
                 title: "donut",
                 ingredients: "glaze, chocolate, sprinkles",
                 price: 5
             }
         ]
-        },
-        lunchMenu : {
-            title: "lunch.",
-            items: [
-                {
+    },
+    {
+        type: "lunchMenu",
+        title: "lunch.",
+        items: [
+            {
                 title: "burger",
                 ingredients: "lettuce, tomato, onion",
                 price: 9,
-                // image: burgerImage
             },
             {
                 title: "sandwich",
@@ -46,15 +51,14 @@ router.get('/', (req, res, next) => {
                 price: 7
             }
         ]
-        },
-        dinnerMenu : {
-            title: "dinner.",
-            items: [
-                {
+    }, {
+        type: "dinnerMenu",
+        title: "dinner.",
+        items: [
+            {
                 title: "pizza",
                 ingredients: "pepperoni, mushrooms, peppers",
                 price: 9,
-                // image: PizzaImage
             },
             {
                 title: "sushi",
@@ -67,8 +71,18 @@ router.get('/', (req, res, next) => {
                 price: 6
             }
         ]
-        }
-    })
-})
+    }
 
-module.exports = router;
+];
+
+DB.Menu
+    .remove({})
+    .then(() => DB.Menu.collection.insertMany(menuSeed))
+    .then(data => {
+        console.log(data.result.n + " records inserted!");
+        process.exit(0);
+    })
+    .catch(err => {
+        console.error(err);
+        process.exit(1);
+    });

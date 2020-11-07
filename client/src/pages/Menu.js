@@ -12,11 +12,11 @@ function Menu() {
 
     function loadMenus() {
         API.getMenus().then(res => {
-
+            
             // Retrieve menus from API
-            setMenus(res);
+            setMenus(res.data);
             //Set default menu to lunch
-            setSelectedMenu(res.data.lunchMenu);
+            setSelectedMenu(res.data[1]);
         })
             .catch(err => console.log(err));
     }
@@ -29,15 +29,15 @@ function Menu() {
 
         if (menuSelect === "dinner") {
 
-            setSelectedMenu(menus.data.dinnerMenu);
+            setSelectedMenu(menus[2]);
 
         } else if (menuSelect === "lunch") {
 
-            setSelectedMenu(menus.data.lunchMenu);
+            setSelectedMenu(menus[1]);
            
         } else if (menuSelect === "breakfast") {
 
-            setSelectedMenu(menus.data.breakfastMenu);
+            setSelectedMenu(menus[0]);
             
         };
     };
